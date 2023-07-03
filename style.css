@@ -41,7 +41,7 @@
 .inferior-container{
     display: grid;
     grid-template-columns: 320px 320px 320px;
-    gap: 35px;
+    gap: 25px;
     text-align: justify;
     color: hsl(0, 0%, 100%);
 }
@@ -72,11 +72,12 @@
 .card .buyer{
     color: hsl(333, 80%, 67%);
 }
-@media screen and (max-width: 420px){
+@media (max-width: 414px){
     .container{
         display: flex;
         flex-direction: column;
         margin: 0;
+        border: 1px solid red;
     }
     .users{
         display: flex;
@@ -89,8 +90,8 @@
     }
     .rate{
         display: flex;
-        flex-direction: column;
         align-items: center;
+        gap: 15px;
     }
     .stars{
         display: flex;
