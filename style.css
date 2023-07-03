@@ -25,6 +25,9 @@
     text-align: center;
 }
 .stars{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: hsl(300, 24%, 96%);
     color: hsl(300, 43%, 22%);
     margin: 10px;
@@ -72,17 +75,17 @@
 .card .buyer{
     color: hsl(333, 80%, 67%);
 }
-@media (max-width: 414px){
+@media screen and (max-width: 395px){
     .container{
         display: flex;
         flex-direction: column;
         margin: 0;
-        border: 1px solid red;
     }
     .users{
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 350px;
     }
     .users > p{
         width: 300px;
@@ -90,8 +93,9 @@
     }
     .rate{
         display: flex;
+        flex-direction: column;
         align-items: center;
-        gap: 15px;
+        gap: 10px;
     }
     .stars{
         display: flex;
